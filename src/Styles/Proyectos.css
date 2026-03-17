@@ -170,7 +170,17 @@
     background-color: var(--naranjahover);
 }
 
+
 /*--------------------------------------Responsive-------------------------------------*/
+@media (max-width: 1900px) {
+
+    .inicio-content {
+        margin-bottom: 1rem;
+    }
+    .inicio-content h2 {
+        font-size: 2rem;
+    }
+}
 
 @media (max-width: 800px) {
     .proyecto-muestra {
@@ -222,30 +232,5 @@
         padding: 0.5rem 1.2rem;
         font-size: 0.85rem;
         margin: 0 1rem 1rem 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .inicio-proyectos {
-        height: 50vh;
-    }
-
-    .inicio-content {
-        margin-left: 2rem;
-        margin-bottom: 2rem;
-        width: 80%;
-    }
-
-    .inicio-content h2 {
-        font-size: 1.2rem;
-    }
-
-    .inicio-content p {
-        font-size: 0.85rem;
-    }
-
-    .otros-proyectos-tarjetas {
-        grid-template-columns: 1fr;
-        gap: 2rem;
     }
 }
