@@ -1,6 +1,5 @@
 import '../Styles/Home.css'
 import { automatizacion, iluminacion, seguridad, casa } from '../assets/imagenes'
-import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Swal from "sweetalert2"
 import { useTranslation } from 'react-i18next'
