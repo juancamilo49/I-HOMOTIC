@@ -673,6 +673,13 @@
     white-space: nowrap;
 }
 
+.ahorro-resultado-usd {
+    font-size: 0.82rem;
+    color: var(--color-green-mid, #0B5B46);
+    font-weight: 600;
+    margin-top: 0.1rem;
+}
+
 .ahorro-resultado-vs {
     font-size: 0.85rem;
     color: var(--colorletraverdeclaro);

@@ -253,6 +253,11 @@ export default function CalculadoraPrecios() {
                                     <p className='ahorro-resultado-valor'>
                                         {formatPrecio(ahorroMensual)}<span>{t('calculator.perMonth')}</span>
                                     </p>
+                                    {trm && ahorroMensual > 0 && (
+                                        <p className='ahorro-resultado-usd'>
+                                            ≈ USD {new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(ahorroMensual / trm)}{t('calculator.perMonth')}
+                                        </p>
+                                    )}
                                     <p className='ahorro-resultado-vs'>
                                         {t('calculator.vsCostWithoutDomotics')} {formatPrecio(costoSinDomotica)}{t('calculator.perMonth')}
                                     </p>
@@ -263,6 +268,11 @@ export default function CalculadoraPrecios() {
                                     <p className='ahorro-resultado-valor'>
                                         {formatPrecio(inversionEstimada)}
                                     </p>
+                                    {trm && (
+                                        <p className='ahorro-resultado-usd'>
+                                            ≈ USD {new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(inversionEstimada / trm)}
+                                        </p>
+                                    )}
                                 </div>
 
                                 <div className='ahorro-meses-box'>
