@@ -169,7 +169,7 @@
 }
 
 .telefono-codigo {
-  min-width: 13rem;
+  width: 11rem;
   flex-shrink: 0;
   cursor: pointer;
 }
