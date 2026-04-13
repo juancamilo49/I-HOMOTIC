@@ -1,0 +1,205 @@
+/* ───────────────── Hero ───────────────── */
+
+.servicios-hero {
+  background-color: var(--color-bg-deep);
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.servicios-hero h1 {
+  color: var(--color-white);
+  font-size: 3.5rem;
+}
+
+.servicios-hero p {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 42rem;
+  font-weight: 300;
+}
+
+/* ───────────────── Cards de servicios ───────────────── */
+
+.servicios-detalle {
+  padding: 4rem 2rem;
+  background-color: var(--blancoprincipal2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.servicios-detalle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 72rem;
+  width: 100%;
+}
+
+.servicio-card {
+  background-color: var(--blancoprincipal1);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1.5px solid rgba(11, 91, 70, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.servicio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(5, 31, 25, 0.08);
+}
+
+.servicio-card img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.servicio-card h2 {
+  font-size: 1.4rem;
+  color: var(--color-bg-deep);
+}
+
+.servicio-card p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--colorletraverde);
+}
+
+/* ───────────────── Diferenciadores ───────────────── */
+
+.diferenciadores {
+  background-color: var(--color-bg-deep);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.diferenciadores h2 {
+  color: var(--color-white);
+  text-align: center;
+}
+
+.diferenciadores-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 60rem;
+  width: 100%;
+}
+
+.diferenciador-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding: 2rem 1.5rem;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(144, 174, 47, 0.2);
+}
+
+.diferenciador-item span.diferenciador-icono {
+  font-size: 2rem;
+}
+
+.diferenciador-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.diferenciador-item p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ───────────────── CTA final ───────────────── */
+
+.servicios-cta {
+  padding: 4rem 2rem;
+  background-color: var(--blancoprincipal2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.servicios-cta h2 {
+  font-size: 2rem;
+  color: var(--color-bg-deep);
+}
+
+.servicios-cta p {
+  max-width: 36rem;
+  font-weight: 300;
+}
+
+.servicios-cta-acciones {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primario {
+  background-color: var(--color-green-dark);
+  color: var(--color-white);
+  border: none;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primario:hover {
+  background-color: var(--color-green-mid);
+  transform: translateY(-2px);
+}
+
+.btn-secundario {
+  background-color: transparent;
+  color: var(--color-green-dark);
+  border: 2px solid var(--color-green-dark);
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-secundario:hover {
+  background-color: var(--color-green-dark);
+  color: var(--color-white);
+}
+
+/* ───────────────── Responsive ───────────────── */
+
+@media (max-width: 900px) {
+  .servicios-detalle-grid,
+  .diferenciadores-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicios-hero h1 {
+    font-size: 2.4rem;
+  }
+}

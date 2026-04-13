@@ -1,15 +1,19 @@
+import { useTranslation } from 'react-i18next'
+
 interface Props {
-    imagen: string
-    titulo: string
-    descripcion: string
+  imagen: string
+  tituloKey: string
+  descripcionKey: string
 }
 
-export default function TarjetaInfo({ imagen, titulo, descripcion }: Props) {
-    return (
-        <div className='tarjetas-info'>
-            <img src={imagen} alt={titulo} />
-            <h2>{titulo}</h2>
-            <p>{descripcion}</p>
-        </div>
-    )
+export default function TarjetaInfo({ imagen, tituloKey, descripcionKey }: Props) {
+  const { t } = useTranslation()
+
+  return (
+    <article className="tarjetas-info">
+      <img src={imagen} alt={t(tituloKey)} />
+      <h2>{t(tituloKey)}</h2>
+      <p>{t(descripcionKey)}</p>
+    </article>
+  )
 }

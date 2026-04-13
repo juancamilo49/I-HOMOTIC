@@ -18,6 +18,13 @@
    width: 95%;
 }
 
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--colorletraverdeclaro);
+    line-height: 1.1;
+}
+
 .hero h2{
     font-size: 5rem;
     font-weight: bold;
@@ -27,6 +34,14 @@
 .hero p{
    margin-right: 10rem;
    margin-bottom: 2rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
 }
 
 .hero-button{
@@ -262,6 +277,12 @@
   .hero-image {
     order: -1;
     width: 100%;
+  }
+
+  .hero-image img {
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
   }
 
 

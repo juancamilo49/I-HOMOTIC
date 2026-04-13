@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+  <title>Recibimos tu mensaje — i-Homotic</title>
+  <!--[if mso]>
+  <noscript>
+    <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
+  </noscript>
+  <![endif]-->
+  <style>
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #f4f8f4; }
+
+    /*
+      Paleta nueva — Manual de marca i-Homotic
+      --color-bg-deep:    #051F19   → headers, navbar, footer
+      --color-green-dark: #07573B   → texto verde, acentos secundarios
+      --color-green-mid:  #0B5B46   → botones, badges
+      --color-accent:     #90AE2F   → CTAs, barra superior, numeración
+      --color-white:      #FFFFFF
+      Fondo claro:        #f4f8f4
+      Borde / divisor:    #d6e8d6
+    */
+
+    @media only screen and (max-width: 600px) {
+      .email-container  { width: 100% !important; }
+      .stack-col        { display: block !important; width: 100% !important; padding-right: 0 !important; margin-bottom: 10px !important; }
+      .hide-mobile      { display: none !important; }
+      .pd-mobile        { padding: 24px 20px !important; }
+      .txt-sm-mobile    { font-size: 13px !important; }
+      .heading-mobile   { font-size: 20px !important; }
+    }
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f4f8f4; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;">
+
+<!-- PREHEADER oculto -->
+<div style="display:none; font-size:1px; color:#f4f8f4; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;">
+  {{ $json.body.nombre }}, recibimos tu solicitud. Carlos te contactará muy pronto — i-Homotic.
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     WRAPPER
+═══════════════════════════════════════════════════════════ -->
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#f4f8f4;">
+<tr>
+<td align="center" style="padding: 28px 12px 40px;">
+
+  <!-- ══ CONTAINER ══════════════════════════════════════════ -->
+  <table role="presentation" class="email-container" cellspacing="0" cellpadding="0" border="0" width="600"
+         style="background-color:#ffffff; border-radius:14px; overflow:hidden; box-shadow:0 4px 24px rgba(5,31,25,0.12);">
+
+    <!-- ══ BARRA ACENTO SUPERIOR (#90AE2F — accent del nuevo manual) ══ -->
+    <tr>
+      <td style="background-color:#90AE2F; height:5px; font-size:0; line-height:0;">&nbsp;</td>
+    </tr>
+
+    <!-- ══ HEADER ═════════════════════════════════════════════
+         Fondo: #051F19 (--color-bg-deep) — el más oscuro del sistema
+    ══════════════════════════════════════════════════════════ -->
+    <tr>
+      <td style="background-color:#051F19; padding: 32px 40px 30px;" class="pd-mobile">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+          <tr>
+            <!-- Logo -->
+            <td style="vertical-align:middle;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td>
+                    <!-- Logotipo: "i" en accent (#90AE2F), guion atenuado, "Homotic" en blanco -->
+                    <span style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:26px; font-weight:bold; letter-spacing:-0.3px; line-height:1;">
+                      <span style="color:#90AE2F;">i</span><span style="color:rgba(255,255,255,0.28);">-</span><span style="color:#f4f8f4;">Homotic</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top:5px;">
+                    <span style="font-family:Arial,Helvetica,sans-serif; font-size:9px; letter-spacing:3.5px; text-transform:uppercase; color:rgba(255,255,255,0.32); font-weight:normal;">
+                      Sostenible &amp; eficiente
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <!-- Icono decorativo derecha -->
+            <td align="right" style="vertical-align:middle;" class="hide-mobile">
+              <div style="width:56px; height:56px; border-radius:50%; background-color:rgba(144,174,47,0.15); border:1px solid rgba(144,174,47,0.30); text-align:center; line-height:56px; font-size:24px; display:inline-block;">
+                🏠
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ══ FRANJA VERDE (divisor header / cuerpo) ══ -->
+    <tr>
+      <td style="background-color:#0B5B46; height:3px; font-size:0; line-height:0;">&nbsp;</td>
+    </tr>
+
+    <!-- ══ SALUDO PRINCIPAL ════════════════════════════════ -->
+    <tr>
+      <td style="padding: 36px 40px 24px; background-color:#ffffff;" class="pd-mobile">
+        <p class="heading-mobile"
+           style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:22px; font-weight:bold;
+                  color:#051F19; margin:0 0 10px 0; line-height:1.3;">
+          Hola, <span style="color:#07573B;">{{ $json.body.nombre }}</span> 👋
+        </p>
+        <p style="font-family:Arial,Helvetica,sans-serif; font-size:15px; color:#07573B;
+                  margin:0 0 6px 0; line-height:1.65;" class="txt-sm-mobile">
+          Recibimos tu mensaje y nos alegra que hayas dado el primer paso hacia un hogar más inteligente.
+        </p>
+        <p style="font-family:Arial,Helvetica,sans-serif; font-size:15px; color:#051F19;
+                  margin:0; line-height:1.65;" class="txt-sm-mobile">
+          Carlos revisará tu solicitud personalmente y <strong>te contactará en las próximas horas</strong> para hablar sobre tu caso.
+        </p>
+      </td>
+    </tr>
+
+    <!-- ══ DIVISOR ══ -->
+    <tr>
+      <td style="padding: 0 40px;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+          <tr><td style="height:1px; background-color:#e4eed4; font-size:0; line-height:0;">&nbsp;</td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ══ RESUMEN DEL FORMULARIO ══════════════════════════ -->
+    <tr>
+      <td style="padding: 28px 40px 0;" class="pd-mobile">
+        <p style="font-family:Arial,Helvetica,sans-serif; font-size:9px; font-weight:bold;
+                  letter-spacing:3px; text-transform:uppercase; color:#0B5B46; margin:0 0 14px 0;">
+          Tu solicitud
+        </p>
+
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+               style="background-color:#f4f8f4; border-radius:10px; overflow:hidden; border:1px solid #c8ddc8;">
+
+          <!-- Nombre -->
+          <tr>
+            <td style="padding:13px 18px; border-bottom:1px solid #e4eed4; width:34%; vertical-align:top;">
+              <span style="font-family:Arial,Helvetica,sans-serif; font-size:10px; font-weight:bold;
+                           color:#0B5B46; text-transform:uppercase; letter-spacing:1.5px;">Nombre</span>
+            </td>
+            <td style="padding:13px 18px; border-bottom:1px solid #e4eed4;">
+              <span style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:14px;
+                           color:#051F19; font-weight:bold;">{{ $json.body.nombre }}</span>
+            </td>
+          </tr>
+
+          <!-- Correo -->
+          <tr>
+            <td style="padding:13px 18px; border-bottom:1px solid #e4eed4; vertical-align:top;">
+              <span style="font-family:Arial,Helvetica,sans-serif; font-size:10px; font-weight:bold;
+                           color:#0B5B46; text-transform:uppercase; letter-spacing:1.5px;">Correo</span>
+            </td>
+            <td style="padding:13px 18px; border-bottom:1px solid #e4eed4;">
+              <span style="font-family:Arial,Helvetica,sans-serif; font-size:14px; color:#051F19;">{{ $json.body.email }}</span>
+            </td>
+          </tr>
+
+          <!-- Teléfono -->
+          <tr>
+            <td style="padding:13px 18px; border-bottom:1px solid #e4eed4; vertical-align:top;">
+              <span style="font-family:Arial,Helvetica,sans-serif; font-size:10px; font-weight:bold;
+                           color:#0B5B46; text-transform:uppercase; letter-spacing:1.5px;">Teléfono</span>
+            </td>
+            <td style="padding:13px 18px; border-bottom:1px solid #e4eed4;">
+              <span style="font-family:Arial,Helvetica,sans-serif; font-size:14px; color:#051F19;">{{ $json.body.telefono }}</span>
+            </td>
+          </tr>
+
+          <!-- Interés -->
+          <tr>
+            <td style="padding:13px 18px; border-bottom:1px solid #e4eed4; vertical-align:top;">
+              <span style="font-family:Arial,Helvetica,sans-serif; font-size:10px; font-weight:bold;
+                           color:#0B5B46; text-transform:uppercase; letter-spacing:1.5px;">Interés</span>
+            </td>
+            <td style="padding:13px 18px; border-bottom:1px solid #e4eed4;">
+              <!-- Badge chip con accent del nuevo manual -->
+              <span style="display:inline-block; background-color:#e4eed4; color:#051F19;
+                           font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:13px;
+                           font-weight:bold; padding:4px 12px; border-radius:999px;
+                           border:1px solid #90AE2F;">{{ $json.body.interes }}</span>
+            </td>
+          </tr>
+
+          <!-- Mensaje -->
+          <tr>
+            <td style="padding:13px 18px; vertical-align:top;">
+              <span style="font-family:Arial,Helvetica,sans-serif; font-size:10px; font-weight:bold;
+                           color:#0B5B46; text-transform:uppercase; letter-spacing:1.5px;">Mensaje</span>
+            </td>
+            <td style="padding:13px 18px;">
+              <span style="font-family:Arial,Helvetica,sans-serif; font-size:13px; color:#051F19;
+                           line-height:1.65; font-style:italic;">"{{ $json.body.mensaje }}"</span>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+
+    <!-- ══ ¿QUÉ SIGUE? ════════════════════════════════════
+         Numeración: bg-deep → green-mid → accent (progresión visual)
+    ══════════════════════════════════════════════════════ -->
+    <tr>
+      <td style="padding: 32px 40px 0;" class="pd-mobile">
+        <p style="font-family:Arial,Helvetica,sans-serif; font-size:9px; font-weight:bold;
+                  letter-spacing:3px; text-transform:uppercase; color:#0B5B46; margin:0 0 20px 0;">
+          ¿Qué sigue?
+        </p>
+
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+
+          <!-- Paso 1 -->
+          <tr>
+            <td style="vertical-align:top; width:46px; padding-bottom:18px;">
+              <div style="width:38px; height:38px; border-radius:50%; background-color:#051F19;
+                          text-align:center; line-height:38px; font-family:Arial,sans-serif;
+                          font-size:14px; font-weight:bold; color:#ffffff;">1</div>
+            </td>
+            <td style="vertical-align:top; padding-bottom:18px; padding-left:4px;">
+              <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:14px;
+                        font-weight:bold; color:#051F19; margin:0 0 3px 0; line-height:38px;">
+                Revisamos tu solicitud
+              </p>
+              <p style="font-family:Arial,Helvetica,sans-serif; font-size:13px; color:#07573B;
+                        margin:0; line-height:1.55;">
+                Carlos Lezcano revisará tu mensaje personalmente y preparará una propuesta ajustada a tu vivienda.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Paso 2 -->
+          <tr>
+            <td style="vertical-align:top; width:46px; padding-bottom:18px;">
+              <div style="width:38px; height:38px; border-radius:50%; background-color:#0B5B46;
+                          text-align:center; line-height:38px; font-family:Arial,sans-serif;
+                          font-size:14px; font-weight:bold; color:#ffffff;">2</div>
+            </td>
+            <td style="vertical-align:top; padding-bottom:18px; padding-left:4px;">
+              <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:14px;
+                        font-weight:bold; color:#051F19; margin:0 0 3px 0; line-height:38px;">
+                Te contactamos por WhatsApp
+              </p>
+              <p style="font-family:Arial,Helvetica,sans-serif; font-size:13px; color:#07573B;
+                        margin:0; line-height:1.55;">
+                Preferimos el contacto directo. Te escribiremos al número que nos dejaste para coordinar una consulta sin costo.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Paso 3 -->
+          <tr>
+            <td style="vertical-align:top; width:46px;">
+              <div style="width:38px; height:38px; border-radius:50%; background-color:#90AE2F;
+                          text-align:center; line-height:38px; font-family:Arial,sans-serif;
+                          font-size:14px; font-weight:bold; color:#ffffff;">3</div>
+            </td>
+            <td style="vertical-align:top; padding-left:4px;">
+              <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:14px;
+                        font-weight:bold; color:#051F19; margin:0 0 3px 0; line-height:38px;">
+                Diseñamos tu solución
+              </p>
+              <p style="font-family:Arial,Helvetica,sans-serif; font-size:13px; color:#07573B;
+                        margin:0; line-height:1.55;">
+                Propuesta personalizada para tu vivienda, sin mensualidades y con tecnología 100% colombiana.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+
+    <!-- ══ CTA WHATSAPP ══════════════════════════════════ -->
+    <tr>
+      <td style="padding: 28px 40px;" class="pd-mobile">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+               style="background-color:#f4f8f4; border-radius:12px; border:1px solid #c8ddc8;">
+          <tr>
+            <td style="padding: 24px 28px;">
+              <p style="font-family:Arial,Helvetica,sans-serif; font-size:13px; color:#07573B;
+                        margin:0 0 3px 0;">
+                ¿Tienes alguna pregunta urgente?
+              </p>
+              <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:16px;
+                        font-weight:bold; color:#051F19; margin:0 0 18px 0;">
+                Escríbenos directamente por WhatsApp
+              </p>
+              <!-- Botón CTA — accent #90AE2F -->
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td style="border-radius:12px; background-color:#90AE2F;">
+                    <a href="https://wa.me/573003974565?text=Hola%20Carlos%2C%20llen%C3%A9%20el%20formulario%20en%20el%20sitio%20de%20i-Homotic%20y%20quisiera%20saber%20m%C3%A1s."
+                       target="_blank" rel="noopener"
+                       style="display:inline-block; font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;
+                              font-size:15px; font-weight:bold; color:#ffffff; text-decoration:none;
+                              padding:14px 32px; border-radius:12px; mso-padding-alt:14px 32px;">
+                      Escribir por WhatsApp →
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ══ DIVISOR ══ -->
+    <tr>
+      <td style="padding: 0 40px;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+          <tr><td style="height:1px; background-color:#e4eed4; font-size:0; line-height:0;">&nbsp;</td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ══ PROPUESTA DE VALOR ═══════════════════════════ -->
+    <tr>
+      <td style="padding: 28px 40px 8px;" class="pd-mobile">
+        <p style="font-family:Arial,Helvetica,sans-serif; font-size:9px; font-weight:bold;
+                  letter-spacing:3px; text-transform:uppercase; color:#0B5B46; margin:0 0 16px 0;">
+          ¿Por qué i-Homotic?
+        </p>
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+          <tr>
+            <!-- Pill 1 -->
+            <td style="width:33%; padding-right:8px; vertical-align:top;" class="stack-col">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                     style="background-color:#f4f8f4; border-radius:10px; border:1px solid #c8ddc8;">
+                <tr>
+                  <td style="padding:18px 14px; text-align:center;">
+                    <div style="font-size:24px; margin-bottom:8px;">🇨🇴</div>
+                    <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:12px;
+                              font-weight:bold; color:#051F19; margin:0 0 5px 0;">100% colombiano</p>
+                    <p style="font-family:Arial,Helvetica,sans-serif; font-size:11px; color:#07573B;
+                              margin:0; line-height:1.5;">Hardware y software diseñados y ensamblados localmente.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <!-- Pill 2 -->
+            <td style="width:33%; padding-right:8px; vertical-align:top;" class="stack-col">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                     style="background-color:#f4f8f4; border-radius:10px; border:1px solid #c8ddc8;">
+                <tr>
+                  <td style="padding:18px 14px; text-align:center;">
+                    <div style="font-size:24px; margin-bottom:8px;">💸</div>
+                    <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:12px;
+                              font-weight:bold; color:#051F19; margin:0 0 5px 0;">Sin mensualidades</p>
+                    <p style="font-family:Arial,Helvetica,sans-serif; font-size:11px; color:#07573B;
+                              margin:0; line-height:1.5;">Sin suscripciones ni dependencia de servidores externos.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <!-- Pill 3 -->
+            <td style="width:33%; vertical-align:top;" class="stack-col">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                     style="background-color:#f4f8f4; border-radius:10px; border:1px solid #c8ddc8;">
+                <tr>
+                  <td style="padding:18px 14px; text-align:center;">
+                    <div style="font-size:24px; margin-bottom:8px;">🎙️</div>
+                    <p style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:12px;
+                              font-weight:bold; color:#051F19; margin:0 0 5px 0;">Control por voz</p>
+                    <p style="font-family:Arial,Helvetica,sans-serif; font-size:11px; color:#07573B;
+                              margin:0; line-height:1.5;">Compatible con Alexa, Google y Siri sin pagos adicionales.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ══ FOOTER ══════════════════════════════════════════
+         Fondo: #051F19 (--color-bg-deep) — mismo que el navbar del sitio
+         Barra accent inferior: #90AE2F
+    ══════════════════════════════════════════════════════ -->
+    <tr>
+      <td style="background-color:#051F19; padding:28px 40px 24px; border-radius:0 0 14px 14px;" class="pd-mobile">
+
+        <!-- Logo footer -->
+        <span style="font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; font-size:17px;
+                     font-weight:bold; letter-spacing:-0.2px;">
+          <span style="color:#90AE2F;">i</span><span style="color:rgba(255,255,255,0.22);">-</span><span style="color:#f4f8f4;">Homotic</span>
+        </span>
+        <span style="font-family:Arial,Helvetica,sans-serif; font-size:9px; letter-spacing:2px;
+                     text-transform:uppercase; color:rgba(255,255,255,0.25); margin-left:10px;">
+          GELECT S.A.S.
+        </span>
+
+        <!-- Divisor -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:16px 0 14px;">
+          <tr><td style="height:1px; background-color:rgba(255,255,255,0.07); font-size:0; line-height:0;">&nbsp;</td></tr>
+        </table>
+
+        <!-- Info contacto + disclaimer -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+          <tr>
+            <td style="vertical-align:top; width:55%;">
+              <p style="font-family:Arial,Helvetica,sans-serif; font-size:11px;
+                        color:rgba(255,255,255,0.38); margin:0 0 3px 0; line-height:1.6;">
+                WhatsApp: <a href="https://wa.me/573003974565"
+                             style="color:rgba(255,255,255,0.55); text-decoration:none;">+57 300 397 4565</a>
+              </p>
+              <p style="font-family:Arial,Helvetica,sans-serif; font-size:11px;
+                        color:rgba(255,255,255,0.38); margin:0; line-height:1.6;">
+                Colombia — Medellín
+              </p>
+            </td>
+            <td style="vertical-align:top; text-align:right; width:45%;">
+              <p style="font-family:Arial,Helvetica,sans-serif; font-size:10px;
+                        color:rgba(255,255,255,0.22); margin:0; line-height:1.6;">
+                Recibiste este correo porque<br>llenaste el formulario de contacto.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Divisor + copyright + barra accent -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-top:16px;">
+          <tr><td style="height:1px; background-color:rgba(255,255,255,0.06); font-size:0; line-height:0;">&nbsp;</td></tr>
+        </table>
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-top:14px;">
+          <tr>
+            <td>
+              <span style="font-family:Arial,Helvetica,sans-serif; font-size:10px; color:rgba(255,255,255,0.2);">
+                &copy; 2025 i-Homotic · GELECT S.A.S. · Todos los derechos reservados
+              </span>
+            </td>
+            <!-- Barra accent (#90AE2F) como firma visual del nuevo manual -->
+            <td align="right">
+              <div style="display:inline-block; width:28px; height:4px; background-color:#90AE2F; border-radius:2px;">&nbsp;</div>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+
+  </table>
+  <!-- FIN CONTAINER -->
+
+</td>
+</tr>
+</table>
+<!-- FIN WRAPPER -->
+
+</body>
+</html>

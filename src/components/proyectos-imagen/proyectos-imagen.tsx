@@ -15,7 +15,7 @@ export default function TarjetaProyectoHome({ tituloKey, descripcionKey }: Props
             <div className='proyectos-tarjetas-info'>
                 <h3>{t(tituloKey)}</h3>
                 <p>{t(descripcionKey)}</p>
-                <button className='proyectos-button' onClick={() => navigate('/proyectos')}>
+                <button className='proyectos-button' onClick={() => navigate('/contacto')}>
                     {t('projects.viewProject')}
                 </button>
             </div>

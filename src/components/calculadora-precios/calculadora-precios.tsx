@@ -2,11 +2,13 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import './calculadora-precios.css'
 import data from './productos.json'
+import { useTRM } from '../../hooks/useTRM'
 
 type Modo = 'productos' | 'paquetes' | 'ahorro'
 
 export default function CalculadoraPrecios() {
     const { t } = useTranslation()
+    const { trm } = useTRM()
     const [modo, setModo] = useState<Modo>('productos')
     const [agregados, setAgregados] = useState<string[]>([])
     const [paqueteSeleccionado, setPaqueteSeleccionado] = useState<string | null>(null)
@@ -307,9 +309,16 @@ export default function CalculadoraPrecios() {
 
                                 <div className='resumen-total'>
                                     <span>{t('calculator.total')}</span>
-                                    <span className='resumen-total-precio'>
-                                        {formatPrecio(totalFinal)}
-                                    </span>
+                                    <div className='resumen-total-precios'>
+                                        <span className='resumen-total-precio'>
+                                            {formatPrecio(totalFinal)}
+                                        </span>
+                                        {trm && totalFinal > 0 && (
+                                            <span className='resumen-total-usd'>
+                                                ≈ USD {new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(totalFinal / trm)} hoy
+                                            </span>
+                                        )}
+                                    </div>
                                 </div>
 
                                 <p className='resumen-nota'>{t('calculator.disclaimer')}</p>

@@ -1,61 +1,43 @@
 import '../Styles/Contacto.css'
-import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import ContactoFormulario from '../components/contacto-formulario/contacto-formulario'
 import { HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone, HiOutlineClock } from 'react-icons/hi'
+import ContactoFormulario from '../components/contacto-formulario/contacto-formulario'
+import PageWrapper from '../components/comunes/PageWrapper'
+import TarjetaContacto from '../components/comunes/TarjetaContacto'
 
 export default function Contacto() {
-    const { t } = useTranslation()
+  const { t } = useTranslation()
 
-    return (
-        <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-        >
-            <section className='contacto-hero'>
-                <div className='contacto-hero-content'>
-                    <h2>{t('contacto.pageTitle')}</h2>
-                    <p>{t('contacto.pageSubtitle')}</p>
-                </div>
-            </section>
+  const infoCards = [
+    { icon: <HiOutlineLocationMarker size={28} />, titleKey: 'contacto.locationTitle', valueKey: 'contacto.locationValue' },
+    { icon: <HiOutlineMail size={28} />,           titleKey: 'contacto.emailTitle',    valueKey: 'contacto.emailValue'    },
+    { icon: <HiOutlinePhone size={28} />,          titleKey: 'contacto.phoneTitle',    valueKey: 'contacto.phoneValue'    },
+    { icon: <HiOutlineClock size={28} />,          titleKey: 'contacto.scheduleTitle', valueKey: 'contacto.scheduleValue' },
+  ]
 
-            <section className='contacto-info'>
-                <div className='contacto-info-grid'>
-                    <div className='contacto-info-card'>
-                        <div className='contacto-info-icon'>
-                            <HiOutlineLocationMarker size={28} />
-                        </div>
-                        <h3>{t('contacto.locationTitle')}</h3>
-                        <p>{t('contacto.locationValue')}</p>
-                    </div>
-                    <div className='contacto-info-card'>
-                        <div className='contacto-info-icon'>
-                            <HiOutlineMail size={28} />
-                        </div>
-                        <h3>{t('contacto.emailTitle')}</h3>
-                        <p>{t('contacto.emailValue')}</p>
-                    </div>
-                    <div className='contacto-info-card'>
-                        <div className='contacto-info-icon'>
-                            <HiOutlinePhone size={28} />
-                        </div>
-                        <h3>{t('contacto.phoneTitle')}</h3>
-                        <p>{t('contacto.phoneValue')}</p>
-                    </div>
-                    <div className='contacto-info-card'>
-                        <div className='contacto-info-icon'>
-                            <HiOutlineClock size={28} />
-                        </div>
-                        <h3>{t('contacto.scheduleTitle')}</h3>
-                        <p>{t('contacto.scheduleValue')}</p>
-                    </div>
-                </div>
-            </section>
+  return (
+    <PageWrapper>
+      <section className="contacto-hero" aria-labelledby="contacto-title">
+        <div className="contacto-hero-content">
+          <h2 id="contacto-title">{t('contacto.pageTitle')}</h2>
+          <p>{t('contacto.pageSubtitle')}</p>
+        </div>
+      </section>
 
-            <ContactoFormulario />
+      <section className="contacto-info" aria-label={t('contacto.pageTitle')}>
+        <div className="contacto-info-grid">
+          {infoCards.map((card) => (
+            <TarjetaContacto
+              key={card.titleKey}
+              icon={card.icon}
+              titleKey={card.titleKey}
+              valueKey={card.valueKey}
+            />
+          ))}
+        </div>
+      </section>
 
-        </motion.div>
-    )
+      <ContactoFormulario />
+    </PageWrapper>
+  )
 }
-        

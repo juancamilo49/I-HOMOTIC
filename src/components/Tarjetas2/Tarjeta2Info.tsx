@@ -13,16 +13,16 @@ export default function TarjetaProyecto({ imagen, tituloKey, descripcionKey, alt
     const navigate = useNavigate()
 
     return (
-        <div className='proyecto-tarjeta'>
+        <article className='proyecto-tarjeta'>
             <img src={imagen} alt={t(altKey)} />
             <h3>{t(tituloKey)}</h3>
             <p>{t(descripcionKey)}</p>
             <button
                 className='proyecto-tarjeta-button'
-                onClick={() => navigate('/proyectos')}
+                onClick={() => navigate('/contacto')}
             >
                 {t('projects.viewProject')}
             </button>
-        </div>
+        </article>
     )
 }

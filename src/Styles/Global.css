@@ -1,46 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Montserrat:wght@300;600&display=swap');
+
 :root {
-  --blancoprincipal1: #FFFFFF;
-  --blancoprincipal2: #f9fbf8;
-  --naranja: #E8721A;
-  --naranjahover: #F07F2A;
-  --verde: #2D6A2E;
-  --verdeclaro: #4c7b45;
-  --colorletraverde: #2d3a2d;
-  --colorletraverdeclaro: #4c7b45;
-  --colorfondoverde: #eef3dd;
-  --colorfondoverdeclaro: #f4faf5;
+  /* Paleta nueva — Manual de marca Ihomotic */
+  --color-bg-deep:    #051F19;
+  --color-green-dark: #07573B;
+  --color-green-mid:  #0B5B46;
+  --color-accent:     #90AE2F;
+  --color-white:      #FFFFFF;
+
+  /* Alias semánticos para compatibilidad con CSS existente */
+  --blancoprincipal1:       #FFFFFF;
+  --blancoprincipal2:       #f4f8f4;
+  --naranja:                #90AE2F;
+  --naranjahover:           #7a9428;
+  --verde:                  #07573B;
+  --verdeclaro:             #0B5B46;
+  --colorletraverde:        #051F19;
+  --colorletraverdeclaro:   #0B5B46;
+  --colorfondoverde:        #e8f0e0;
+  --colorfondoverdeclaro:   #f4f8f4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Sora', sans-serif;
-}
-
-h1 {
-  font-size: 5rem;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  background-color: var(--blancoprincipal2);
   color: var(--colorletraverde);
 }
 
+h1,
 h2 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-family: 'Righteous', sans-serif;
   color: var(--colorletraverde);
 }
 
-h3 {
-  font-size: 2rem;
-  font-weight: 500;
+h1 { font-size: 5rem; }
+h2 { font-size: 3rem; }
+
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   color: var(--blancoprincipal2);
 }
 
-h4 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--blancoprincipal2);
-}
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
 
 p {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 300;
   color: var(--colorletraverde);
 }

@@ -10,7 +10,10 @@ import Nosotros from './Pages/Nosotros.tsx'
 import Proyectos from './Pages/Proyectos.tsx'
 import Contacto from './Pages/Contacto.tsx'
 import Mapa from './Pages/Mapa.tsx'
+import Servicios from './Pages/Servicios.tsx'
 import ScrollToTop from './components/ScrollToTop.tsx'
+import WhatsAppFlotante from './components/comunes/WhatsAppFlotante.tsx'
+import BackToTop from './components/comunes/BackToTop.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -21,10 +24,13 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<Home />} /> 
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/proyectos" element={<Proyectos />} />
+        <Route path="/servicios" element={<Servicios />} />
         <Route path="/mapa" element={<Mapa />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <Footer />
+      <WhatsAppFlotante />
+      <BackToTop />
     </BrowserRouter>
   </StrictMode>,
 )

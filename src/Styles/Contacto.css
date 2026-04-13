@@ -43,7 +43,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    min-height: 10rem;
     gap: 0.8rem;
     padding: 2rem 1.5rem;
     background-color: var(--blancoprincipal1);
@@ -127,6 +129,8 @@
 
     .contacto-info-card {
         padding: 1.5rem 1rem;
+        min-height: 10rem;
+        justify-content: center;
     }
 
     .contacto-info-icon {

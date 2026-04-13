@@ -1,0 +1,60 @@
+.contacto-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
+  padding: 2rem 1.5rem;
+  background-color: var(--blancoprincipal1);
+  border-radius: 16px;
+  border: 1.5px solid rgba(11, 91, 70, 0.12);
+  transition: all 0.3s ease;
+}
+
+.contacto-info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(5, 31, 25, 0.08);
+  border-color: rgba(11, 91, 70, 0.25);
+}
+
+.contacto-info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--colorfondoverdeclaro), var(--colorfondoverde));
+  color: var(--verde);
+}
+
+.contacto-info-card h3 {
+  color: var(--colorletraverde);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.contacto-info-card p {
+  color: var(--colorletraverdeclaro);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .contacto-info-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .contacto-info-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .contacto-info-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .contacto-info-card p {
+    font-size: 0.85rem;
+  }
+}
