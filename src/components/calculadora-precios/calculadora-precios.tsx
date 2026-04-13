@@ -8,7 +8,7 @@ type Modo = 'productos' | 'paquetes' | 'ahorro'
 
 export default function CalculadoraPrecios() {
     const { t } = useTranslation()
-    const { trm } = useTRM()
+    const { trm, fecha, loading: trmLoading, error: trmError } = useTRM()
     const [modo, setModo] = useState<Modo>('productos')
     const [agregados, setAgregados] = useState<string[]>([])
     const [paqueteSeleccionado, setPaqueteSeleccionado] = useState<string | null>(null)
@@ -327,6 +327,31 @@ export default function CalculadoraPrecios() {
                     </div>
                 </div>
             </div>
+
+            {/* ── Widget TRM ── */}
+            {!trmError && (
+                <div className='trm-widget'>
+                    <div className='trm-widget-inner'>
+                        <span className='trm-widget-label'>💱 TRM hoy</span>
+                        {trmLoading ? (
+                            <span className='trm-widget-loading'>Cargando…</span>
+                        ) : trm ? (
+                            <>
+                                <div className='trm-widget-rates'>
+                                    <span className='trm-widget-rate'>
+                                        1 USD = <strong>{new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(trm)}</strong>
+                                    </span>
+                                    <span className='trm-widget-sep'>·</span>
+                                    <span className='trm-widget-rate'>
+                                        1.000 COP ≈ <strong>USD {(1000 / trm).toFixed(4)}</strong>
+                                    </span>
+                                </div>
+                                {fecha && <span className='trm-widget-fecha'>Vigente desde {fecha} · Fuente: Banco de la República</span>}
+                            </>
+                        ) : null}
+                    </div>
+                </div>
+            )}
         </section>
     )
 }
